@@ -37,6 +37,7 @@ foreach (string fileName in fileNames)
         }
 
         string newName = fileName.Replace(" (720p - TRI Audio)", String.Empty) ?? fileName;
+        newName = fileName.Replace(" (720p BluRay TRI Audio)", String.Empty) ?? fileName;
         newName = newName.Replace("- ", String.Empty);
         newName = newName.Replace("S00", "S0");
         newName = newName.Replace(" E0", "E0");
